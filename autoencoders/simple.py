@@ -50,7 +50,6 @@ autoencoder.fit(x_train, x_train,
 encoded_imgs = encoder.predict(x_test)
 decoded_imgs = decoder.predict(encoded_imgs)
 
-decoded_imgs = decoder.predict(encoded_imgs)
 # use Matplotlib (don't ask)
 import matplotlib.pyplot as plt
 
