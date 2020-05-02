@@ -30,10 +30,10 @@ model = load_model("test.h5")
 #print(model.summary())
 
 k = 150
-inp = np.array(test_data[k:k+30])
+inp = np.array(test_data[k:k+20])
 print([id_to_word[v] for v in inp])
 for j in range(0, 10):
-    one_hot_result = model.predict(np.reshape(inp,(1,30)))
+    one_hot_result = model.predict(np.reshape(inp,(1,20)))
     result = np.argmax(one_hot_result)
     word = id_to_word[result]
     print(word)
